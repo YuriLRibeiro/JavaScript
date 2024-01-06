@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            var n1 = prompt('insira o primeiro numero');
+            var sinal = prompt('insira o sinal da operacao');
+            while(sinal !='-' && sinal != '+' && sinal != '*' && sinal!= "/" ){
+                alert("Insira um sinal valido");
+                var sinal = prompt('insira o sinal da operacao');
+            }
+            var n2 = prompt('insira o ultimo numero');
+
+            var Resultado = 0;
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+
+            if(sinal == '+'){
+                Resultado = n1 + n2;
+            }
+            else if(sinal == '-'){
+                Resultado = n1-n2;
+            }
+            else if(sinal == '*'){
+                Resultado = n1*n2;
+            }
+            else{
+                Resultado = n1 / n2;
+            }
+            alert("O resultado e: " + Resultado);
+
+        </script>
+    </body>
+</html>
